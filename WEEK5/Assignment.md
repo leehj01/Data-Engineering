@@ -22,6 +22,18 @@ crate table 스키마.weather_forcast(
     );
 ```
 
+- API를 json 형태로 가져오기
+
+```python
+f = requests.get(link)
+f_js = f.json()
+```
+
+- datetime변경
+```python
+datetime
+```
+
  ### 숙제 3 : airflow 환경 설정 변경
  1. airflow 환경 설정이 들어있는 파일이름은?
  2. 이 파일에서 airflow 를 api 형태로 외부에서 조작하고 싶다면 어느 섹션을 변경해야하는가?
