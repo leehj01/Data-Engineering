@@ -18,7 +18,7 @@ crate table 스키마.weather_forcast(
     temp float
     min_temp float
     max_temp float
-    created_date timestamp default GETDATE()
+    created_date timestamp default GETDATE(). # 이 필드를 통해서, 중복처리를 해줄것 
     );
 ```
 
