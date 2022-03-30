@@ -35,10 +35,14 @@ datetime
 ```
 
  ### 숙제 3 : airflow 환경 설정 변경
- 1. airflow 환경 설정이 들어있는 파일이름은?
+ 1. airflow 환경 설정이 들어있는 파일이름은? airflow.cfg
  2. 이 파일에서 airflow 를 api 형태로 외부에서 조작하고 싶다면 어느 섹션을 변경해야하는가?
+   - api 색션의 auth_backend를 airflow.api.auth.backend.basic_auth로 변경
  3. variable 에서 변수의 값이 encrypted 가 되려면, 변수의 이름에 어떤 단어들이 들어가야 하는데 , 이단어들은 무엇인가?
-   - password , token
+   - password , token, secret, passwd, authorization, api_key, apikey, access_token
  4. 이 환경 설정 파일이 수정되었다면, 이를 실제로 반영하기 위해서 해야하는 일은?
+   - sudo systemctl restart airflow-webserver
+   - sudo systemctl restart ariflow-scheduler
  5. dags 폴더에 새로운 dag를 만들면, 언제 실제로 airflow시스템에서 이를 알게 되나? 이 스캔 주기를 결정해주는 키의 이름이 무엇인가?
+  - dat_dir_list-interval
  
