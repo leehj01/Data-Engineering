@@ -43,6 +43,10 @@ datetime
  4. 이 환경 설정 파일이 수정되었다면, 이를 실제로 반영하기 위해서 해야하는 일은?
    - sudo systemctl restart airflow-webserver
    - sudo systemctl restart ariflow-scheduler
+
+** db reset 하면, airflow 가 초기화 됨!
+
+
  5. dags 폴더에 새로운 dag를 만들면, 언제 실제로 airflow시스템에서 이를 알게 되나? 이 스캔 주기를 결정해주는 키의 이름이 무엇인가?
-  - dat_dir_list-interval
+  - dat_dir_list-interval : 최대 5분까지 걸릴 수 있다. 
  
